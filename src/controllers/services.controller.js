@@ -46,7 +46,8 @@ export const updateService = async (req, res) => {
           message: "Service not found",
         });
       } else {
-        res.redirect("/");
+        // Redirige a la ruta correcta después de la actualización
+        res.redirect("/home");
       }
     })
     .catch((err) => {
