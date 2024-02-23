@@ -59,7 +59,7 @@ export const updateService = async (req, res) => {
 
 export const deleteService = async (req, res) => {
   serviceDAO.deleteService(req.params.serviceId, req.body)
-    .then((result) => res.redirect("/"))
+    .then((result) => res.redirect("/home"))
     // .then((result) => res.render(result))
     .catch((err) => res.json({ status: "Server unavailable" }));
 };
