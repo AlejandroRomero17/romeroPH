@@ -8,6 +8,10 @@
     "start": "node src/index.js",
     "uwu": "nodemon src/index.js"
   },
+  "buildCommand": "echo 'No build step needed'",
+  "routes": {
+    "start": "/home"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlejandroRomero17/romeroPH.git"
