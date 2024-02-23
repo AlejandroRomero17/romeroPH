@@ -32,7 +32,7 @@ export const createService = async (req, res) => {
   console.log(req.body);
   serviceDAO
     .createService(req.body)
-    .then((result) => res.redirect("/"))
+    .then((result) => res.redirect("/home"))
     .catch((err) => res.json({ status: "Server unavailable" }));
 };
 
