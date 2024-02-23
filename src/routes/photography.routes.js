@@ -11,10 +11,10 @@ import {
 
 const router = Router();
 
-router.get("/home", getHomePage);
+router.get("/", getHomePage);
 router.get("/photographers", getPhotographers);
 // Obtener todos los servicios
-router.get("/", getAllServices);
+router.get("/home", getAllServices);
 router.get("/:serviceId", getService);
 router.post("/", createService);
 router.post("/:serviceId", updateService);
