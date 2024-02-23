@@ -36,13 +36,16 @@
             <form action="/<%= service.serviceId %>" method="POST">
 
                 <input type="text" name="serviceId" id="txt_serviceId" placeholder="ID del Servicio"
-                    value="<%= service.serviceId %>">
+                    value="<%= service.serviceId %>" readonly>
 
                 <input type="text" name="serviceName" id="txt_serviceName" placeholder="Nombre del Servicio"
                     value="<%= service.serviceName %>">
 
                 <input type="text" name="photographer" id="txt_photographer" placeholder="Fotógrafo"
                     value="<%= service.photographer %>">
+
+                <input type="text" name="description" id="txt_description" placeholder="Descripción"
+                    value="<%= service.description %>">
 
                 <input type="text" name="price" id="txt_price" placeholder="Precio" value="<%= service.price %>">
 
