@@ -1,0 +1,44 @@
+<!-- photographers.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Fotógrafos</title>
+    <!-- Incluye tus enlaces a CSS, jQuery, jQuery Mobile y cualquier otra biblioteca necesaria -->
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Listado de Fotógrafos</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="/home" data-icon="home">Inicio</a></li>
+                    <li><a href="/" data-icon="tag">Servicios</a></li>
+                    <li><a href="/photographers" data-icon="user" class="ui-btn-active">Fotógrafos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <!-- Aquí iteraremos sobre la lista de fotógrafos y los mostraremos -->
+                <% photographers.forEach(function(photographer) { %>
+                    <li>
+                        <!-- Muestra el nombre del fotógrafo -->
+                        <h2>Nombre: <%= photographer %></h2>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <!-- Puedes agregar un pie de página si es necesario -->
+        </div>
+
+        <!-- Incluye tus scripts al final del body si es necesario -->
+    </div>
+</body>
+
+</html>

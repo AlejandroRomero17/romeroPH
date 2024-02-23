@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Servicios Fotográficos</title>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Servicios Fotográficos</h1>
+            <div data-role="navbar">
+                <ul>
+                    <ul>
+                        <ul>
+                            <li><a href="/home" data-icon="home">Inicio</a></li>
+                            <li><a href="/" data-icon="tag" class="ui-btn-active">Servicios</a></li>
+                            <li><a href="/photographers" data-icon="user">Fotógrafos</a></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <div data-role="content">
+            <form action="/" method="POST">
+
+                <input type="text" name="serviceId" id="txt_serviceId" placeholder="ID del Servicio">
+
+                <input type="text" name="serviceName" id="txt_serviceName" placeholder="Nombre del Servicio">
+
+                <input type="text" name="description" id="txt_description" placeholder="Descripción">
+
+                <input type="text" name="photographer" id="txt_photographer" placeholder="Fotógrafo">
+
+                <input type="text" name="price" id="txt_price" placeholder="Precio">
+
+                <input type="text" name="duration" id="txt_duration" placeholder="Duración">
+
+                <input type="text" name="location" id="txt_location" placeholder="Ubicación">
+
+                <label for="flip-2">Estatus:</label>
+                <select name="status" id="flip-2" data-role="slider">
+                    <option value="0">Inactivo</option>
+                    <option value="1">Activo</option>
+                </select>
+
+                <button type="submit" id="submit-6" class="ui-shadow ui-btn ui-corner-all ui-mini">Guardar
+                    Servicio</button>
+            </form>
+
+
+            <form>
+                <input data-type="search" id="searchForCollapsibleSet">
+            </form>
+            <div data-role="collapsibleset" data-filter="true" data-inset="true" id="collapsiblesetForFilter"
+                data-input="#searchForCollapsibleSet">
+                <% services.forEach((service)=> { %>
+                    <div data-role="collapsible" data-filtertext="<%= service.serviceName %>">
+                        <h3>Nombre del Servicio: <%= service.serviceName %>
+                        </h3>
+                        <ul data-role="listview" data-inset="false">
+                            <li>Fotógrafo: <%= service.photographer %>
+                            </li>
+                            <li>Precio: <%= service.price %>
+                            </li>
+                            <li>Duración: <%= service.duration %>
+                            </li>
+                            <li>Ubicación: <%= service.location %>
+                            </li>
+                            <li>Estatus: <%= service.status %>
+                            </li>
+                            <li><a href="/<%= service.serviceId %>" class="ui-btn">Editar</a></li>
+                            <li><a href="/delete/<%=service.serviceId %>" class="ui-btn">Eliminar</a></li>
+                        </ul>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h5>Desarrollado por Romero</h5>
+        </div>
+    </div>
+</body>
+
+</html>

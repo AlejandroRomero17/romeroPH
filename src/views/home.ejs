@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- Enlaces a Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2 !important;
+            color: #333 !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ui-page {
+            background-color: #fff !important;
+            border: 1px solid #ddd !important;
+            margin: 0 !important;
+        }
+
+        .ui-header,
+        .ui-footer {
+            background-color: #333 !important;
+            color: #fff !important;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .ui-navbar {
+            background-color: #444 !important;
+        }
+
+        .site-text {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .site-text h2 {
+            color: #333 !important;
+        }
+
+        .site-text p {
+            color: #555 !important;
+        }
+
+        .social-links {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            margin-top: 20px !important;
+        }
+
+        .social-links a {
+            margin: 0 10px !important;
+        }
+
+        .social-links img {
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 50% !important;
+        }
+
+        .slider-container {
+            margin: 20px 0 !important;
+        }
+
+        .slider {
+            width: 100% !important;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .slider img {
+            width: 100% !important;
+            height: auto !important;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <title>Keyframe Romero Films - Fotografía</title>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Keyframe Romero Films</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="/home" data-icon="tag" class="ui-btn-active">Inicio</a></li>
+                    <li><a href="/" data-icon="home">Servicios</a></li>
+                    <li><a href="/photographers" data-icon="user">Fotógrafos</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <div data-role="content">
+            <!-- Texto del sitio -->
+            <div class="site-text">
+                <h2>Bienvenido a Keyframe Romero Films</h2>
+                <p>Somos una empresa fotográfica apasionada por capturar momentos especiales y crear recuerdos
+                    inolvidables. Explora nuestro mundo visual y déjanos ser parte de tus momentos más preciados.</p>
+            </div>
+            <!-- Carrusel de imágenes con Slick Carousel -->
+            <div class="slider-container">
+                <div class="slider" id="imageSlider">
+                    <!-- Imágenes del carrusel (sustituir con URLs de Facebook) -->
+                    <div><img src="https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg" alt="Imagen 1">
+                    </div>
+                    <div><img
+                            src="https://images.pexels.com/photos/1667071/pexels-photo-1667071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Imagen 2"></div>
+                    <div><img
+                            src="https://images.pexels.com/photos/17324223/pexels-photo-17324223/free-photo-of-amor-gente-mujer-agua.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Imagen 3"></div>
+                    <div><img
+                            src="https://scontent.fmex19-1.fna.fbcdn.net/v/t39.30808-6/421586976_366181479546695_2911300804849485050_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c42490&_nc_eui2=AeH_PSxjnDNG2Z0sn-Lgl_9tpw5E3MBOOBCnDkTcwE44EEry2xSjWwktE4cCdOcxiVZ7RIz_bknmfilyIYNowrJy&_nc_ohc=3ysXutv_w4sAX9_s23u&_nc_ht=scontent.fmex19-1.fna&cb_e2o_trans=t&oh=00_AfAl8rE80vcCBeFQCeGz-25cW-k5IC-hnj3vUNMdakLWfg&oe=65DDF98A"
+                            alt="Imagen 4"></div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h5>Conéctate con nosotros:</h5>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61553926479601" target="_blank"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAYFBMVEU6VZ////80UZ309vqToMfM0uQyT5xbcK0uTZyXpMu5wNna3eni5fB0hLdida5SaqogRJjq7PRNZaehq80oSZpAW6NqfbN7i7qwudW+xdzGzeERPJRIYKSpss+LmcTU2OfuBL5hAAAC6klEQVR4nO3c23KrIACFYYuKxmM8RGu2ie//lm3vOtNNQDLA0ln/fWf4xgNGsFHEGGOMMcYYY4wxxtj5EkLmL5Khx2eaGK+juPXZVKubbqFHaVR+jebHZ7Hct7JS1qWtCD1QbfJfPhdbF3/oqjL0Ey2X02IAOQImF3VqBDkARtaLMQUbI0RTdDssyBhxe5Z7KMgYuQ67DgsyRrafZrewA2DEZH4TQ8fIZuflAoyR62ZhAcWMe2YXcMz1YWWBxIyJnQURk9d75xdcjOzvlhZATPTcPVnCYkRrMVuiYvKL9YGBw8jMarrExIyDvQUNI+xvZXiYvLa/YuAw0TtnGRjmvbMMDTPZPskAYqLknUvmo4PC3ArDYcfVlv6t6IHeNYvV7FGmHOYma//Whwb8TvQmv/y7pI+klOI/hQb8TrSVwWHJJNSglTV6TNrnoUdpltT/xiyng1giOevuzPEl9BiNk9ppJs2Ocb18J3SYeDjGEuxPWkw3H+bA6DHVYS5/A8zWID18vU6LSaGeJF9HDGrEoEYMasSgRgxqxKBGDGrEoEYMasQETvnZyKjHjK8+OfH/Uk2s80VRotsAWA2J6m9/arxrpMG6hWVP768I7TbGGjWfCFNN3m8P7jCb//UOd5i7/5Vzd5jCN8Ul5uF/nnGHGU6EiZ/+n3WcYar5RJhyOtFpFmCacYe5ryfCLLfzYOJHgA0PzjAhttW4wnTPALs3XGGq+kyYELs3XGG29kSYJcQ+YEeY+HP1b3GGGQJYnGGSEPvqXGH8v2dyh+nqE2HKIJsEHWHuIaYZV5giwA8AZ5gA75kiZ6sAjzEERrRDoUr39Wy3KP80yJ35O+XK11X3wXnaXg/zj9q0HzYArmkqO+ICrTJiUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY155gvTt5IUAsJbbkAAAAASUVORK5CYII="
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/alejandro_romeroooo/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Twitter"></a>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                // Configuración del carrusel con Slick Carousel
+                $("#imageSlider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    adaptiveHeight: true,
+                    autoplay: true, // Activar el autoplay
+                    autoplaySpeed: 2000 // Establecer la velocidad del autoplay en milisegundos (2 segundos)
+                });
+            });
+        </script>
+        
+        
+    </div>
+</body>
+
+</html>

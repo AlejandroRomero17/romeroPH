@@ -1,0 +1,37 @@
+{
+  "name": "romeroph",
+  "version": "1.0.0",
+  "description": "RomeroPH proyect",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "uwu": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroRomero17/romeroPH.git"
+  },
+  "keywords": [
+    "romero",
+    "lol",
+    "uwu",
+    "php",
+    "keyframeromero"
+  ],
+  "author": "romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroRomero17/romeroPH/issues"
+  },
+  "homepage": "https://github.com/AlejandroRomero17/romeroPH#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  }
+}
